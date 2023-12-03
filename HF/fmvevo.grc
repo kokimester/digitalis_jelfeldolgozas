@@ -65,6 +65,27 @@ blocks:
     coordinate: [374, 14]
     rotation: 0
     state: true
+- name: gain
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ''
+    min_len: '200'
+    orient: Qt.Horizontal
+    rangeType: float
+    start: '0.1'
+    step: '0.1'
+    stop: '10'
+    value: '3.5'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [506, 17]
+    rotation: 0
+    state: true
 - name: samp_rate
   id: variable
   parameters:
@@ -103,16 +124,33 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    gain: samp_rate/(5*2*math.pi*75e3/8.0)
+    gain: gain
     maxoutbuf: '0'
     minoutbuf: '0'
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [962, 349]
+    coordinate: [948, 349]
     rotation: 0
     state: enabled
+- name: audio_sink_0
+  id: audio_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    device_name: ''
+    num_inputs: '1'
+    ok_to_block: 'True'
+    samp_rate: '32000'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [886, 663]
+    rotation: 180
+    state: true
 - name: band_pass_filter_0
   id: band_pass_filter
   parameters:
@@ -163,6 +201,42 @@ blocks:
     coordinate: [1185, 454]
     rotation: 0
     state: true
+- name: blocks_keep_one_in_n_0
+  id: blocks_keep_one_in_n
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    n: '2'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1163, 713]
+    rotation: 180
+    state: true
+- name: blocks_multiply_const_vxx_0
+  id: blocks_multiply_const_vxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    const: '0.1'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    type: float
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1086, 409]
+    rotation: 270
+    state: true
 - name: blocks_multiply_xx_0
   id: blocks_multiply_xx
   parameters:
@@ -181,6 +255,22 @@ blocks:
     coordinate: [1450, 465]
     rotation: 0
     state: true
+- name: digital_diff_decoder_bb_0
+  id: digital_diff_decoder_bb
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    modulus: '2'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [966, 740]
+    rotation: 180
+    state: true
 - name: digital_psk_demod_0
   id: digital_psk_demod
   parameters:
@@ -188,7 +278,7 @@ blocks:
     alias: ''
     comment: ''
     constellation_points: '2'
-    differential: 'True'
+    differential: 'False'
     excess_bw: '0.35'
     freq_bw: 6.28/100.0
     log: 'False'
@@ -206,6 +296,25 @@ blocks:
     coordinate: [1328, 626]
     rotation: 180
     state: enabled
+- name: fir_filter_xxx_0
+  id: fir_filter_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    decim: '4'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    samp_delay: '0'
+    taps: firdes.low_pass(1.0,240000,13e3,3e3,firdes.WIN_HAMMING)
+    type: fff
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [882, 600]
+    rotation: 0
+    state: true
 - name: freq_xlating_fir_filter_xxx_0
   id: freq_xlating_fir_filter_xxx
   parameters:
@@ -284,7 +393,7 @@ blocks:
     maxoutbuf: '0'
     minoutbuf: '0'
     nfilts: '32'
-    rrate: 2375/200000
+    rrate: 4750/200000
     samp_delay: '0'
     taps: ''
     type: ccf
@@ -293,6 +402,27 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [1847, 621]
+    rotation: 180
+    state: true
+- name: pfb_arb_resampler_xxx_1
+  id: pfb_arb_resampler_xxx
+  parameters:
+    affinity: ''
+    alias: ''
+    atten: '100'
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    nfilts: '32'
+    rrate: 128000/200000
+    samp_delay: '0'
+    taps: ''
+    type: fff
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [877, 504]
     rotation: 180
     state: true
 - name: qtgui_const_sink_x_0
@@ -546,7 +676,7 @@ blocks:
     bus_structure: null
     coordinate: [722, 163]
     rotation: 0
-    state: true
+    state: disabled
 - name: qtgui_freq_sink_x_0_0_0
   id: qtgui_freq_sink_x
   parameters:
@@ -626,7 +756,7 @@ blocks:
     bus_structure: null
     coordinate: [984, 165]
     rotation: 0
-    state: true
+    state: disabled
 - name: qtgui_freq_sink_x_0_0_0_0
   id: qtgui_freq_sink_x
   parameters:
@@ -786,7 +916,7 @@ blocks:
     bus_structure: null
     coordinate: [1215, 138]
     rotation: 0
-    state: true
+    state: disabled
 - name: qtgui_freq_sink_x_0_0_0_0_0_0
   id: qtgui_freq_sink_x
   parameters:
@@ -866,7 +996,7 @@ blocks:
     bus_structure: null
     coordinate: [1707, 237]
     rotation: 0
-    state: true
+    state: disabled
 - name: qtgui_freq_sink_x_0_0_0_0_0_0_0
   id: qtgui_freq_sink_x
   parameters:
@@ -947,86 +1077,6 @@ blocks:
     coordinate: [1930, 238]
     rotation: 0
     state: true
-- name: qtgui_freq_sink_x_0_0_0_0_0_1
-  id: qtgui_freq_sink_x
-  parameters:
-    affinity: ''
-    alias: ''
-    alpha1: '1.0'
-    alpha10: '1.0'
-    alpha2: '1.0'
-    alpha3: '1.0'
-    alpha4: '1.0'
-    alpha5: '1.0'
-    alpha6: '1.0'
-    alpha7: '1.0'
-    alpha8: '1.0'
-    alpha9: '1.0'
-    autoscale: 'False'
-    average: '1.0'
-    axislabels: 'True'
-    bw: samp_rate/5
-    color1: '"blue"'
-    color10: '"dark blue"'
-    color2: '"red"'
-    color3: '"green"'
-    color4: '"black"'
-    color5: '"cyan"'
-    color6: '"magenta"'
-    color7: '"yellow"'
-    color8: '"dark red"'
-    color9: '"dark green"'
-    comment: ''
-    ctrlpanel: 'False'
-    fc: '0'
-    fftsize: '1024'
-    freqhalf: 'True'
-    grid: 'False'
-    gui_hint: ''
-    label: Relative Gain
-    label1: ''
-    label10: ''''''
-    label2: ''''''
-    label3: ''''''
-    label4: ''''''
-    label5: ''''''
-    label6: ''''''
-    label7: ''''''
-    label8: ''''''
-    label9: ''''''
-    legend: 'True'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    name: '"RDS"'
-    nconnections: '1'
-    showports: 'False'
-    tr_chan: '0'
-    tr_level: '0.0'
-    tr_mode: qtgui.TRIG_MODE_FREE
-    tr_tag: '""'
-    type: float
-    units: dB
-    update_time: '0.10'
-    width1: '1'
-    width10: '1'
-    width2: '1'
-    width3: '1'
-    width4: '1'
-    width5: '1'
-    width6: '1'
-    width7: '1'
-    width8: '1'
-    width9: '1'
-    wintype: firdes.WIN_BLACKMAN_hARRIS
-    ymax: '10'
-    ymin: '-140'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1452, 280]
-    rotation: 0
-    state: true
 - name: rational_resampler_xxx_0
   id: rational_resampler_xxx
   parameters:
@@ -1061,7 +1111,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1159, 727]
+    coordinate: [770, 738]
     rotation: 180
     state: true
 - name: rds_panel_0
@@ -1076,7 +1126,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [764, 740]
+    coordinate: [375, 751]
     rotation: 180
     state: true
 - name: rds_parser_0
@@ -1095,7 +1145,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [951, 719]
+    coordinate: [562, 730]
     rotation: 180
     state: true
 - name: rtlsdr_source_0
@@ -1461,15 +1511,19 @@ connections:
 - [analog_agc_xx_0, '0', qtgui_const_sink_x_0, '0']
 - [analog_quadrature_demod_cf_0, '0', band_pass_filter_0, '0']
 - [analog_quadrature_demod_cf_0, '0', band_pass_filter_0_0, '0']
+- [analog_quadrature_demod_cf_0, '0', blocks_multiply_const_vxx_0, '0']
 - [analog_quadrature_demod_cf_0, '0', qtgui_freq_sink_x_0_0_0_0_0, '0']
 - [band_pass_filter_0, '0', blocks_multiply_xx_0, '1']
 - [band_pass_filter_0, '0', blocks_multiply_xx_0, '2']
 - [band_pass_filter_0, '0', blocks_multiply_xx_0, '3']
 - [band_pass_filter_0, '0', qtgui_freq_sink_x_0_0_0_0, '0']
 - [band_pass_filter_0_0, '0', blocks_multiply_xx_0, '0']
-- [band_pass_filter_0_0, '0', qtgui_freq_sink_x_0_0_0_0_0_1, '0']
+- [blocks_keep_one_in_n_0, '0', digital_diff_decoder_bb_0, '0']
+- [blocks_multiply_const_vxx_0, '0', pfb_arb_resampler_xxx_1, '0']
 - [blocks_multiply_xx_0, '0', low_pass_filter_0_0, '0']
-- [digital_psk_demod_0, '0', rds_decoder_0, '0']
+- [digital_diff_decoder_bb_0, '0', rds_decoder_0, '0']
+- [digital_psk_demod_0, '0', blocks_keep_one_in_n_0, '0']
+- [fir_filter_xxx_0, '0', audio_sink_0, '0']
 - [freq_xlating_fir_filter_xxx_0, '0', pfb_arb_resampler_xxx_0, '0']
 - [freq_xlating_fir_filter_xxx_0, '0', qtgui_freq_sink_x_0_0_0_0_0_0_0, '0']
 - [low_pass_filter_0, '0', qtgui_freq_sink_x_0_0, '0']
@@ -1477,6 +1531,7 @@ connections:
 - [low_pass_filter_0_0, '0', freq_xlating_fir_filter_xxx_0, '0']
 - [low_pass_filter_0_0, '0', qtgui_freq_sink_x_0_0_0_0_0_0, '0']
 - [pfb_arb_resampler_xxx_0, '0', analog_agc_xx_0, '0']
+- [pfb_arb_resampler_xxx_1, '0', fir_filter_xxx_0, '0']
 - [rational_resampler_xxx_0, '0', analog_quadrature_demod_cf_0, '0']
 - [rational_resampler_xxx_0, '0', qtgui_freq_sink_x_0_0_0, '0']
 - [rds_decoder_0, out, rds_parser_0, in]
