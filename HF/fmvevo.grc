@@ -104,11 +104,11 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    gain: '1.0'
+    gain: '0.01'
     max_gain: '65536'
     maxoutbuf: '0'
     minoutbuf: '0'
-    rate: 1e-4
+    rate: 1e-6
     reference: '1.0'
     type: complex
   states:
@@ -168,7 +168,73 @@ blocks:
     bus_structure: null
     coordinate: [1904, 590]
     rotation: 0
-    state: true
+    state: disabled
+- name: blocks_file_source_0
+  id: blocks_file_source
+  parameters:
+    affinity: ''
+    alias: ''
+    begin_tag: pmt.PMT_NIL
+    comment: ''
+    file: /home/kokimester/digitalis_jelfeldolgozas/HF/fromcostas.cf32
+    length: '0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    repeat: 'True'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1941, 872]
+    rotation: 180
+    state: enabled
+- name: blocks_file_source_1
+  id: blocks_file_source
+  parameters:
+    affinity: ''
+    alias: ''
+    begin_tag: pmt.PMT_NIL
+    comment: ''
+    file: /home/kokimester/digitalis_jelfeldolgozas/HF/fromsync.cf32
+    length: '0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    repeat: 'True'
+    type: complex
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1263, 759]
+    rotation: 180
+    state: disabled
+- name: blocks_file_source_1_0
+  id: blocks_file_source
+  parameters:
+    affinity: ''
+    alias: ''
+    begin_tag: pmt.PMT_NIL
+    comment: ''
+    file: /home/kokimester/digitalis_jelfeldolgozas/HF/fromsync.cf32
+    length: '0'
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    offset: '0'
+    repeat: 'True'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [766, 845]
+    rotation: 180
+    state: enabled
 - name: blocks_multiply_const_vxx_0
   id: blocks_multiply_const_vxx
   parameters:
@@ -186,25 +252,6 @@ blocks:
     bus_structure: null
     coordinate: [1148, 449]
     rotation: 270
-    state: true
-- name: blocks_null_source_0
-  id: blocks_null_source
-  parameters:
-    affinity: ''
-    alias: ''
-    bus_structure_source: '[[0,],]'
-    comment: ''
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    num_outputs: '1'
-    type: byte
-    vlen: '1'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [766, 751]
-    rotation: 0
     state: true
 - name: digital_costas_loop_cc_0
   id: digital_costas_loop_cc
@@ -237,9 +284,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [736, 797]
+    coordinate: [719, 797]
     rotation: 180
-    state: enabled
+    state: disabled
 - name: digital_psk_demod_0
   id: digital_psk_demod
   parameters:
@@ -263,33 +310,6 @@ blocks:
     bus_source: false
     bus_structure: null
     coordinate: [947, 734]
-    rotation: 180
-    state: disabled
-- name: digital_symbol_sync_xx_0
-  id: digital_symbol_sync_xx
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: ''
-    constellation: digital.constellation_bpsk().base()
-    damping: '0.1'
-    loop_bw: '0.045'
-    max_dev: '1.5'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    nfilters: '128'
-    osps: '2'
-    pfb_mf_taps: '[]'
-    resamp_type: digital.IR_MMSE_8TAP
-    sps: '4'
-    ted_gain: '1.0'
-    ted_type: digital.TED_SIGNUM_TIMES_SLOPE_ML
-    type: cc
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1243, 675]
     rotation: 180
     state: disabled
 - name: fir_filter_xxx_0
@@ -317,7 +337,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    decim: '4'
+    decim: '8'
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_delay: '0'
@@ -329,7 +349,7 @@ blocks:
     bus_structure: null
     coordinate: [1664, 685]
     rotation: 180
-    state: disabled
+    state: enabled
 - name: freq_xlating_fir_filter_xxx_0
   id: freq_xlating_fir_filter_xxx
   parameters:
@@ -523,7 +543,7 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    autoscale: 'True'
+    autoscale: 'False'
     axislabels: 'True'
     color1: '"blue"'
     color10: '"red"'
@@ -599,7 +619,7 @@ blocks:
     bus_structure: null
     coordinate: [943, 994]
     rotation: 180
-    state: true
+    state: disabled
 - name: qtgui_const_sink_x_0_1
   id: qtgui_const_sink_x
   parameters:
@@ -615,7 +635,7 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    autoscale: 'True'
+    autoscale: 'False'
     axislabels: 'True'
     color1: '"blue"'
     color10: '"red"'
@@ -707,7 +727,7 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    autoscale: 'True'
+    autoscale: 'False'
     axislabels: 'True'
     color1: '"blue"'
     color10: '"red"'
@@ -959,7 +979,7 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    autoscale: 'True'
+    autoscale: 'False'
     axislabels: 'True'
     color1: blue
     color10: dark blue
@@ -1056,7 +1076,7 @@ blocks:
     alpha7: '1.0'
     alpha8: '1.0'
     alpha9: '1.0'
-    autoscale: 'True'
+    autoscale: 'False'
     axislabels: 'True'
     color1: blue
     color10: dark blue
@@ -1234,7 +1254,7 @@ blocks:
     bus_structure: null
     coordinate: [955, 902]
     rotation: 180
-    state: true
+    state: disabled
 - name: rational_resampler_xxx_0
   id: rational_resampler_xxx
   parameters:
@@ -1286,7 +1306,7 @@ blocks:
     bus_structure: null
     coordinate: [170, 806]
     rotation: 180
-    state: true
+    state: enabled
 - name: rds_parser_0
   id: rds_parser
   parameters:
@@ -1670,18 +1690,20 @@ connections:
 - [analog_agc_xx_0, '0', qtgui_const_sink_x_0_1, '0']
 - [analog_quadrature_demod_cf_0, '0', blocks_multiply_const_vxx_0, '0']
 - [analog_quadrature_demod_cf_0, '0', freq_xlating_fir_filter_xxx_0, '0']
+- [blocks_file_source_0, '0', fir_filter_xxx_1, '0']
+- [blocks_file_source_0, '0', qtgui_const_sink_x_0, '0']
+- [blocks_file_source_0, '0', qtgui_time_sink_x_0, '0']
+- [blocks_file_source_1, '0', digital_psk_demod_0, '0']
+- [blocks_file_source_1, '0', qtgui_const_sink_x_0_0, '0']
+- [blocks_file_source_1, '0', qtgui_time_sink_x_0_0_0, '0']
+- [blocks_file_source_1_0, '0', rds_decoder_0, '0']
 - [blocks_multiply_const_vxx_0, '0', pfb_arb_resampler_xxx_1, '0']
-- [blocks_null_source_0, '0', digital_diff_decoder_bb_0, '0']
 - [digital_costas_loop_cc_0, '0', fir_filter_xxx_1, '0']
 - [digital_costas_loop_cc_0, '0', qtgui_const_sink_x_0, '0']
 - [digital_costas_loop_cc_0, '0', qtgui_time_sink_x_0, '0']
 - [digital_diff_decoder_bb_0, '0', rds_decoder_0, '0']
 - [digital_psk_demod_0, '0', digital_diff_decoder_bb_0, '0']
-- [digital_symbol_sync_xx_0, '0', digital_psk_demod_0, '0']
-- [digital_symbol_sync_xx_0, '0', qtgui_const_sink_x_0_0, '0']
-- [digital_symbol_sync_xx_0, '0', qtgui_time_sink_x_0_0_0, '0']
 - [fir_filter_xxx_0, '0', audio_sink_0, '0']
-- [fir_filter_xxx_1, '0', digital_symbol_sync_xx_0, '0']
 - [fir_filter_xxx_1, '0', qtgui_time_sink_x_0_0, '0']
 - [freq_xlating_fir_filter_xxx_0, '0', pfb_arb_resampler_xxx_0, '0']
 - [freq_xlating_fir_filter_xxx_0, '0', qtgui_freq_sink_x_0_0_0_0_0_0_0, '0']
