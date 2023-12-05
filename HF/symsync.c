@@ -5,6 +5,7 @@
 #include <malloc.h>
 #include <unistd.h>
 #include <stdbool.h>
+#include <assert.h>
 
 float sinc(float x){
 	if(fabsf(x)<0.001f) return 1;
@@ -20,48 +21,49 @@ int main(int argc, char** argv)
 	{
 		fprintf(stderr,"%s set sps=%s\n",argv[0],argv[1]);
 		sps = atol(argv[1]);
+		assert(sps % 2 == 0);
 	}
 	
 	// 0 a legujabb, 1 az elozo, 2 a kettovel ezelotti
-	complex float in[sps],out;
+	complex float samples[sps],out,in;
 	for(size_t i = 0; i<sps; ++i){
-		in[i]=0+0*I;
+		samples[i]=0+0*I;
 	}
-	float timing_error = 0;
-	const float TIMING_INC = 0.1;
+	float max = 0.f;
 	size_t counter = 0;
+	//samples[index] and samples[(index+sps/2)%sps] will be sent
+	//one of which is maximal, the other is minimal(0)
+	size_t index = 0;
 	while(1)
 	{
-		int k = fread(&in[0],sizeof(complex float),1,stdin);
+		int k = fread(&in,sizeof(complex float),1,stdin);
 		if(feof(stdin))
 		{
 			break;
 		}
 		if(k>0)
 		{
-			if(++counter % 2){
-			//interpolate between prev_in and in
-			fprintf(stderr,"%+1.2f %+1.2f %+1.2f\t->\t",crealf(in[2]),crealf(in[1]),crealf(in[0]));
-			in[0] = in[0] * sinc(timing_error)		+ in[1] * sinc(1.f+timing_error)	+ in[2] * sinc(2+timing_error);
-			in[1] = in[0] * sinc(-1.f+timing_error) + in[1] * sinc(timing_error)		+ in[2] * sinc(1+timing_error);
-			in[2] = in[0] * sinc(-2.f+timing_error) + in[1] * sinc(-1.f+timing_error)	+ in[2] * sinc(timing_error);
-			fprintf(stderr,"%+1.2f %+1.2f %+1.2f ",crealf(in[2]),crealf(in[1]),crealf(in[0]));
-			//
-			//Detect early-late
-			float sign = crealf(in[1] * (in[0]-in[2]));
-			bool early = sign > 0;
-			fprintf(stderr, "%s: t_error:%+2.3f\n", early ? "early" : "late ",timing_error);
-			timing_error += early ? TIMING_INC : -TIMING_INC;
-			if(timing_error > 1.f){
-				timing_error = -1.f;
+			if(counter++ < sps){
+				for(size_t i = sps-1; i > 0; --i){
+					samples[i] = samples[i-1];
+				}
+				samples[0] = in;
 			}
-			/* fprintf(stderr, "%1.2f %1.2f %1.2f\n", sinc(1+timing_error), sinc(timing_error), sinc(-1.f+timing_error)); */
+			else{
+				counter = 0;
+				max = 0.f;
+				for(size_t i = 0; i<sps;++i){
+					float current_value = fabsf(crealf(samples[i]));
+					fprintf(stderr, "%1.2f\t",crealf(samples[i]));
+					if(current_value > max){
+						index = i;
+						max = current_value;
+					}
+				}
+				fprintf(stderr, "\n");
+				/* fwrite(&samples[(index+(sps/2))%sps],sizeof(complex float),1,stdout); */
+				fwrite(&samples[index],sizeof(complex float),1,stdout);
 			}
-			//shift everything
-			out = in[1];
-			in[2] = in[1];
-			in[1] = in[0];
-			fwrite(&out,sizeof(complex float),1,stdout);
 		}
 		else
 		{
