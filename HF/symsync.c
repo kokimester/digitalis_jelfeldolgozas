@@ -62,14 +62,21 @@ int main(int argc, char** argv)
 						max = current_value;
 					}
 				}
-				/* fprintf(stderr, "\n"); */
+				/* fprintf(stderr, "index | (index+sps/2)modulo sps\n"); */
+				/* fprintf(stderr, "%u | %u\n",index,(index+sps/2)%sps); */
+
 				/* fwrite(&samples[(index+(sps/2))%sps],sizeof(complex float),1,stdout); */
+				fwrite(&samples[0],sizeof(complex float),1,stdout);
+				fwrite(&samples[4],sizeof(complex float),1,stdout);
+				fwrite(&samples[8],sizeof(complex float),1,stdout);
+				fwrite(&samples[12],sizeof(complex float),1,stdout);
 				/* fwrite(&samples[index],sizeof(complex float),1,stdout); */
-				uint8_t bit = crealf(samples[index]) > 0.f ? 1 : 0;
-				unsigned char output = (bit ^ prevbit) & 1;
-				prevbit=bit;
+
+				/* uint8_t bit = crealf(samples[index]) > 0.f ? 1 : 0; */
+				/* unsigned char output = (bit ^ prevbit) & 1; */
+				/* prevbit=bit; */
 				/* fprintf(stderr, "decoded: %u\n",bit); */
-				fwrite(&output, sizeof(uint8_t), 1, stdout);
+				/* fwrite(&bit, sizeof(uint8_t), 1, stdout); */
 			}
 		}
 		else
