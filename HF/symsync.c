@@ -13,8 +13,6 @@ float sinc(float x){
 	return sinf(x*M_PI)/(x*M_PI);
 }
 
-
-
 int main(int argc, char** argv)
 {
 	long sps = 2;
@@ -26,12 +24,11 @@ int main(int argc, char** argv)
 	}
 	
 	// 0 a legujabb, 1 az elozo, 2 a kettovel ezelotti
-	complex float samples[sps],out,in;
-	for(size_t i = 0; i<sps; ++i){
-		samples[i]=0+0*I;
-	}
+	complex float out,in[3];
 	float max = 0.f;
 	size_t counter = 0;
+	float timing_error = 0.f;
+	const float TIMING_INC = 0.01f;
 	//samples[index] and samples[(index+sps/2)%sps] will be sent
 	//one of which is maximal, the other is minimal(0)
 	size_t index = 0;
@@ -45,39 +42,31 @@ int main(int argc, char** argv)
 		}
 		if(k>0)
 		{
-			if(counter++ < sps){
-				for(size_t i = sps-1; i > 0; --i){
-					samples[i] = samples[i-1];
-				}
-				samples[0] = in;
+			if(++counter % 2){
+			//interpolate between the three points
+			/* fprintf(stderr,"%+1.2f %+1.2f %+1.2f\t->\t",crealf(in[2]),crealf(in[1]),crealf(in[0])); */
+			in[0] = in[0] * sinc(timing_error)		+ in[1] * sinc(1.f+timing_error)	+ in[2] * sinc(2+timing_error);
+			in[1] = in[0] * sinc(-1.f+timing_error) + in[1] * sinc(timing_error)		+ in[2] * sinc(1+timing_error);
+			in[2] = in[0] * sinc(-2.f+timing_error) + in[1] * sinc(-1.f+timing_error)	+ in[2] * sinc(timing_error);
+			/* fprintf(stderr,"%+1.2f %+1.2f %+1.2f ",crealf(in[2]),crealf(in[1]),crealf(in[0])); */
+			//
+			//Detect early-late
+			float sign = crealf(in[1] * (in[0]-in[2]));
+			bool early = sign > 0;
+			/* fprintf(stderr, "%s: t_error:%+2.3f\n", early ? "early" : "late ",timing_error); */
+			timing_error += early ? TIMING_INC : -TIMING_INC;
+			if(timing_error > 1.f){
+				timing_error = -1.f;
 			}
-			else{
-				counter = 0;
-				max = 0.f;
-				for(size_t i = 0; i<sps;++i){
-					float current_value = fabsf(crealf(samples[i]));
-					/* fprintf(stderr, "%1.2f\t",crealf(samples[i])); */
-					if(current_value > max){
-						index = i;
-						max = current_value;
-					}
-				}
-				/* fprintf(stderr, "index | (index+sps/2)modulo sps\n"); */
-				/* fprintf(stderr, "%u | %u\n",index,(index+sps/2)%sps); */
-
-				/* fwrite(&samples[(index+(sps/2))%sps],sizeof(complex float),1,stdout); */
-				fwrite(&samples[0],sizeof(complex float),1,stdout);
-				fwrite(&samples[4],sizeof(complex float),1,stdout);
-				fwrite(&samples[8],sizeof(complex float),1,stdout);
-				fwrite(&samples[12],sizeof(complex float),1,stdout);
-				/* fwrite(&samples[index],sizeof(complex float),1,stdout); */
-
-				/* uint8_t bit = crealf(samples[index]) > 0.f ? 1 : 0; */
-				/* unsigned char output = (bit ^ prevbit) & 1; */
-				/* prevbit=bit; */
-				/* fprintf(stderr, "decoded: %u\n",bit); */
-				/* fwrite(&bit, sizeof(uint8_t), 1, stdout); */
+			if(timing_error < -1.f){
+				timing_error = 1.f;
 			}
+			out = in[1];
+			fwrite(&out,sizeof(complex float),1,stdout);
+			}
+			//shift everything
+			in[2] = in[1];
+			in[1] = in[0];
 		}
 		else
 		{

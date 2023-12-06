@@ -2,37 +2,42 @@ import numpy as np
 import matplotlib.pyplot as plt
 import sys
 
-if(len(sys.argv) < 3):
+if(len(sys.argv) < 2):
     print("not enough input parameters")
     quit()
 
 a = np.fromfile(sys.argv[1],dtype='complex64')
-b = np.fromfile(sys.argv[2],dtype='complex64')
+if(len(sys.argv) > 2):
+    b = np.fromfile(sys.argv[2],dtype='complex64')
 
 
 #keparany [4,3]
 plt.figure(1,[8,6])
 #plt.figure(1,[16,9])
-plt.subplot(211)
+if(len(sys.argv) > 2):
+    plt.subplot(211)
 plt.plot(np.real(a),'.-',label='real')
 plt.plot(np.imag(a),'.-',label='imag')
-plt.title('first signal in time')
+if(len(sys.argv) > 2):
+    plt.title('first signal in time')
+plt.title('signal in time')
 plt.xlabel('time [sample index]')
 plt.xlim(0,190000)
 plt.ylim(-2,2)
 plt.ylabel('amplitude')
 plt.grid()
 plt.legend()
-plt.subplot(212)
-plt.plot(np.real(b),'.-',label='real')
-plt.plot(np.imag(b),'.-',label='imag')
-plt.title('second signal in time')
-plt.xlabel('time [sample index]')
-plt.xlim(0,190000)
-plt.ylim(-2,2)
-plt.ylabel('amplitude')
-plt.grid()
-plt.legend()
+if(len(sys.argv) > 2):
+    plt.subplot(212)
+    plt.plot(np.real(b),'.-',label='real')
+    plt.plot(np.imag(b),'.-',label='imag')
+    plt.title('second signal in time')
+    plt.xlabel('time [sample index]')
+    plt.xlim(0,190000)
+    plt.ylim(-2,2)
+    plt.ylabel('amplitude')
+    plt.grid()
+    plt.legend()
 
 # A=20*np.log10(np.abs(np.fft.fft(a)/np.size(a)))
 # A=A-max(A)

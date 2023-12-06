@@ -40,7 +40,6 @@ from gnuradio.filter import pfb
 from gnuradio.qtgui import Range, RangeWidget
 import osmosdr
 import time
-import rds
 from gnuradio import qtgui
 
 class fmvevo(gr.top_block, Qt.QWidget):
@@ -105,16 +104,61 @@ class fmvevo(gr.top_block, Qt.QWidget):
         self.rtlsdr_source_0.set_bb_gain(20, 0)
         self.rtlsdr_source_0.set_antenna('', 0)
         self.rtlsdr_source_0.set_bandwidth(0, 0)
-        self.rds_parser_0 = rds.parser(False, False, 0)
-        self.rds_panel_0 = rds.rdsPanel(0)
-        self._rds_panel_0_win = self.rds_panel_0
-        self.top_grid_layout.addWidget(self._rds_panel_0_win)
-        self.rds_decoder_0 = rds.decoder(False, False)
         self.rational_resampler_xxx_0 = filter.rational_resampler_ccc(
                 interpolation=1,
                 decimation=5,
                 taps=None,
                 fractional_bw=None)
+        self.qtgui_time_sink_x_0_0_0 = qtgui.time_sink_c(
+            1024, #size
+            19000/8, #samp_rate
+            "After symbol sync", #name
+            1 #number of inputs
+        )
+        self.qtgui_time_sink_x_0_0_0.set_update_time(0.10)
+        self.qtgui_time_sink_x_0_0_0.set_y_axis(-1, 1)
+
+        self.qtgui_time_sink_x_0_0_0.set_y_label('Amplitude', "")
+
+        self.qtgui_time_sink_x_0_0_0.enable_tags(True)
+        self.qtgui_time_sink_x_0_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, 0, "")
+        self.qtgui_time_sink_x_0_0_0.enable_autoscale(False)
+        self.qtgui_time_sink_x_0_0_0.enable_grid(False)
+        self.qtgui_time_sink_x_0_0_0.enable_axis_labels(True)
+        self.qtgui_time_sink_x_0_0_0.enable_control_panel(False)
+        self.qtgui_time_sink_x_0_0_0.enable_stem_plot(False)
+
+
+        labels = ['Signal 1', 'Signal 2', 'Signal 3', 'Signal 4', 'Signal 5',
+            'Signal 6', 'Signal 7', 'Signal 8', 'Signal 9', 'Signal 10']
+        widths = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        colors = ['blue', 'red', 'green', 'black', 'cyan',
+            'magenta', 'yellow', 'dark red', 'dark green', 'dark blue']
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0]
+        styles = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        markers = [-1, -1, -1, -1, -1,
+            -1, -1, -1, -1, -1]
+
+
+        for i in range(2):
+            if len(labels[i]) == 0:
+                if (i % 2 == 0):
+                    self.qtgui_time_sink_x_0_0_0.set_line_label(i, "Re{{Data {0}}}".format(i/2))
+                else:
+                    self.qtgui_time_sink_x_0_0_0.set_line_label(i, "Im{{Data {0}}}".format(i/2))
+            else:
+                self.qtgui_time_sink_x_0_0_0.set_line_label(i, labels[i])
+            self.qtgui_time_sink_x_0_0_0.set_line_width(i, widths[i])
+            self.qtgui_time_sink_x_0_0_0.set_line_color(i, colors[i])
+            self.qtgui_time_sink_x_0_0_0.set_line_style(i, styles[i])
+            self.qtgui_time_sink_x_0_0_0.set_line_marker(i, markers[i])
+            self.qtgui_time_sink_x_0_0_0.set_line_alpha(i, alphas[i])
+
+        self._qtgui_time_sink_x_0_0_0_win = sip.wrapinstance(self.qtgui_time_sink_x_0_0_0.pyqwidget(), Qt.QWidget)
+        self.top_grid_layout.addWidget(self._qtgui_time_sink_x_0_0_0_win)
         self.qtgui_time_sink_x_0_0 = qtgui.time_sink_c(
             1024, #size
             19000/4, #samp_rate
@@ -335,6 +379,46 @@ class fmvevo(gr.top_block, Qt.QWidget):
 
         self._qtgui_const_sink_x_0_1_win = sip.wrapinstance(self.qtgui_const_sink_x_0_1.pyqwidget(), Qt.QWidget)
         self.top_grid_layout.addWidget(self._qtgui_const_sink_x_0_1_win)
+        self.qtgui_const_sink_x_0_0 = qtgui.const_sink_c(
+            512, #size
+            "After sync", #name
+            1 #number of inputs
+        )
+        self.qtgui_const_sink_x_0_0.set_update_time(0.10)
+        self.qtgui_const_sink_x_0_0.set_y_axis(-1, 1)
+        self.qtgui_const_sink_x_0_0.set_x_axis(-1, 1)
+        self.qtgui_const_sink_x_0_0.set_trigger_mode(qtgui.TRIG_MODE_FREE, qtgui.TRIG_SLOPE_POS, 0.0, 0, "")
+        self.qtgui_const_sink_x_0_0.enable_autoscale(False)
+        self.qtgui_const_sink_x_0_0.enable_grid(False)
+        self.qtgui_const_sink_x_0_0.enable_axis_labels(True)
+
+
+        labels = ['', '', '', '', '',
+            '', '', '', '', '']
+        widths = [1, 1, 1, 1, 1,
+            1, 1, 1, 1, 1]
+        colors = ["blue", "red", "red", "red", "red",
+            "red", "red", "red", "red", "red"]
+        styles = [0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0]
+        markers = [0, 0, 0, 0, 0,
+            0, 0, 0, 0, 0]
+        alphas = [1.0, 1.0, 1.0, 1.0, 1.0,
+            1.0, 1.0, 1.0, 1.0, 1.0]
+
+        for i in range(1):
+            if len(labels[i]) == 0:
+                self.qtgui_const_sink_x_0_0.set_line_label(i, "Data {0}".format(i))
+            else:
+                self.qtgui_const_sink_x_0_0.set_line_label(i, labels[i])
+            self.qtgui_const_sink_x_0_0.set_line_width(i, widths[i])
+            self.qtgui_const_sink_x_0_0.set_line_color(i, colors[i])
+            self.qtgui_const_sink_x_0_0.set_line_style(i, styles[i])
+            self.qtgui_const_sink_x_0_0.set_line_marker(i, markers[i])
+            self.qtgui_const_sink_x_0_0.set_line_alpha(i, alphas[i])
+
+        self._qtgui_const_sink_x_0_0_win = sip.wrapinstance(self.qtgui_const_sink_x_0_0.pyqwidget(), Qt.QWidget)
+        self.top_grid_layout.addWidget(self._qtgui_const_sink_x_0_0_win)
         self.qtgui_const_sink_x_0 = qtgui.const_sink_c(
             512, #size
             "After costas", #name
@@ -395,15 +479,17 @@ class fmvevo(gr.top_block, Qt.QWidget):
                 firdes.WIN_HAMMING,
                 6.76))
         self.freq_xlating_fir_filter_xxx_0 = filter.freq_xlating_fir_filter_fcc(1, firdes.low_pass(2500.0,250000,2.6e3,2e3,firdes.WIN_HAMMING), 57e3, samp_rate/5)
-        self.fir_filter_xxx_1 = filter.fir_filter_ccc(8, [8])
+        self.fir_filter_xxx_1 = filter.fir_filter_ccc(4, [8])
         self.fir_filter_xxx_1.declare_sample_delay(0)
         self.fir_filter_xxx_0 = filter.fir_filter_fff(4, firdes.low_pass(1.0,240000,13e3,3e3,firdes.WIN_HAMMING))
         self.fir_filter_xxx_0.declare_sample_delay(0)
         self.blocks_multiply_const_vxx_0 = blocks.multiply_const_ff(0.1)
-        self.blocks_file_source_1_0 = blocks.file_source(gr.sizeof_char*1, '/home/kokimester/digitalis_jelfeldolgozas/HF/fromsync.cf32', True, 0, 0)
-        self.blocks_file_source_1_0.set_begin_tag(pmt.PMT_NIL)
+        self.blocks_file_source_1 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/kokimester/digitalis_jelfeldolgozas/HF/fromsync.cf32', True, 0, 0)
+        self.blocks_file_source_1.set_begin_tag(pmt.PMT_NIL)
         self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/kokimester/digitalis_jelfeldolgozas/HF/fromcostas.cf32', True, 0, 0)
         self.blocks_file_source_0.set_begin_tag(pmt.PMT_NIL)
+        self.blocks_file_sink_0 = blocks.file_sink(gr.sizeof_gr_complex*1, '/home/kokimester/digitalis_jelfeldolgozas/HF/tocostas.cf32', False)
+        self.blocks_file_sink_0.set_unbuffered(False)
         self.audio_sink_0 = audio.sink(32000, '', True)
         self.analog_quadrature_demod_cf_0 = analog.quadrature_demod_cf(gain)
         self.analog_agc_xx_0 = analog.agc_cc(1e-6, 1.0, 0.01)
@@ -414,15 +500,15 @@ class fmvevo(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
-        self.msg_connect((self.rds_decoder_0, 'out'), (self.rds_parser_0, 'in'))
-        self.msg_connect((self.rds_parser_0, 'out'), (self.rds_panel_0, 'in'))
+        self.connect((self.analog_agc_xx_0, 0), (self.blocks_file_sink_0, 0))
         self.connect((self.analog_agc_xx_0, 0), (self.qtgui_const_sink_x_0_1, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.blocks_multiply_const_vxx_0, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.freq_xlating_fir_filter_xxx_0, 0))
         self.connect((self.blocks_file_source_0, 0), (self.fir_filter_xxx_1, 0))
         self.connect((self.blocks_file_source_0, 0), (self.qtgui_const_sink_x_0, 0))
         self.connect((self.blocks_file_source_0, 0), (self.qtgui_time_sink_x_0, 0))
-        self.connect((self.blocks_file_source_1_0, 0), (self.rds_decoder_0, 0))
+        self.connect((self.blocks_file_source_1, 0), (self.qtgui_const_sink_x_0_0, 0))
+        self.connect((self.blocks_file_source_1, 0), (self.qtgui_time_sink_x_0_0_0, 0))
         self.connect((self.blocks_multiply_const_vxx_0, 0), (self.pfb_arb_resampler_xxx_1, 0))
         self.connect((self.fir_filter_xxx_0, 0), (self.audio_sink_0, 0))
         self.connect((self.fir_filter_xxx_1, 0), (self.qtgui_time_sink_x_0_0, 0))

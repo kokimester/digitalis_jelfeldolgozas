@@ -150,7 +150,7 @@ blocks:
     bus_structure: null
     coordinate: [886, 663]
     rotation: 180
-    state: true
+    state: enabled
 - name: blocks_file_sink_0
   id: blocks_file_sink
   parameters:
@@ -168,6 +168,24 @@ blocks:
     bus_structure: null
     coordinate: [1904, 590]
     rotation: 0
+    state: enabled
+- name: blocks_file_sink_0_0
+  id: blocks_file_sink
+  parameters:
+    affinity: ''
+    alias: ''
+    append: 'False'
+    comment: ''
+    file: /home/kokimester/digitalis_jelfeldolgozas/HF/grccostas.cf32
+    type: complex
+    unbuffered: 'False'
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [1729, 964]
+    rotation: 180
     state: disabled
 - name: blocks_file_source_0
   id: blocks_file_source
@@ -210,9 +228,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [1263, 759]
+    coordinate: [1264, 721]
     rotation: 180
-    state: disabled
+    state: enabled
 - name: blocks_file_source_1_0
   id: blocks_file_source
   parameters:
@@ -220,7 +238,7 @@ blocks:
     alias: ''
     begin_tag: pmt.PMT_NIL
     comment: ''
-    file: /home/kokimester/digitalis_jelfeldolgozas/HF/fromsync.cf32
+    file: /home/kokimester/digitalis_jelfeldolgozas/HF/todecoder.bin
     length: '0'
     maxoutbuf: '0'
     minoutbuf: '0'
@@ -232,9 +250,27 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [766, 845]
+    coordinate: [855, 941]
     rotation: 180
-    state: enabled
+    state: disabled
+- name: blocks_keep_one_in_n_0
+  id: blocks_keep_one_in_n
+  parameters:
+    affinity: ''
+    alias: ''
+    comment: ''
+    maxoutbuf: '0'
+    minoutbuf: '0'
+    n: '2'
+    type: byte
+    vlen: '1'
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [788, 731]
+    rotation: 180
+    state: disabled
 - name: blocks_multiply_const_vxx_0
   id: blocks_multiply_const_vxx
   parameters:
@@ -284,7 +320,7 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [719, 797]
+    coordinate: [565, 805]
     rotation: 180
     state: disabled
 - name: digital_psk_demod_0
@@ -337,7 +373,7 @@ blocks:
     affinity: ''
     alias: ''
     comment: ''
-    decim: '8'
+    decim: '4'
     maxoutbuf: '0'
     minoutbuf: '0'
     samp_delay: '0'
@@ -617,9 +653,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [943, 994]
+    coordinate: [1050, 999]
     rotation: 180
-    state: disabled
+    state: enabled
 - name: qtgui_const_sink_x_0_1
   id: qtgui_const_sink_x
   parameters:
@@ -1157,7 +1193,7 @@ blocks:
     bus_structure: null
     coordinate: [1413, 856]
     rotation: 180
-    state: true
+    state: enabled
 - name: qtgui_time_sink_x_0_0_0
   id: qtgui_time_sink_x
   parameters:
@@ -1252,9 +1288,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [955, 902]
+    coordinate: [1054, 902]
     rotation: 180
-    state: disabled
+    state: enabled
 - name: rational_resampler_xxx_0
   id: rational_resampler_xxx
   parameters:
@@ -1289,9 +1325,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [540, 795]
+    coordinate: [358, 796]
     rotation: 180
-    state: enabled
+    state: disabled
 - name: rds_panel_0
   id: rds_panel
   parameters:
@@ -1304,9 +1340,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [170, 806]
+    coordinate: [-12, 807]
     rotation: 180
-    state: enabled
+    state: disabled
 - name: rds_parser_0
   id: rds_parser
   parameters:
@@ -1323,9 +1359,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [332, 787]
+    coordinate: [150, 788]
     rotation: 180
-    state: enabled
+    state: disabled
 - name: rtlsdr_source_0
   id: rtlsdr_source
   parameters:
@@ -1697,12 +1733,14 @@ connections:
 - [blocks_file_source_1, '0', qtgui_const_sink_x_0_0, '0']
 - [blocks_file_source_1, '0', qtgui_time_sink_x_0_0_0, '0']
 - [blocks_file_source_1_0, '0', rds_decoder_0, '0']
+- [blocks_keep_one_in_n_0, '0', digital_diff_decoder_bb_0, '0']
 - [blocks_multiply_const_vxx_0, '0', pfb_arb_resampler_xxx_1, '0']
+- [digital_costas_loop_cc_0, '0', blocks_file_sink_0_0, '0']
 - [digital_costas_loop_cc_0, '0', fir_filter_xxx_1, '0']
 - [digital_costas_loop_cc_0, '0', qtgui_const_sink_x_0, '0']
 - [digital_costas_loop_cc_0, '0', qtgui_time_sink_x_0, '0']
 - [digital_diff_decoder_bb_0, '0', rds_decoder_0, '0']
-- [digital_psk_demod_0, '0', digital_diff_decoder_bb_0, '0']
+- [digital_psk_demod_0, '0', blocks_keep_one_in_n_0, '0']
 - [fir_filter_xxx_0, '0', audio_sink_0, '0']
 - [fir_filter_xxx_1, '0', qtgui_time_sink_x_0_0, '0']
 - [freq_xlating_fir_filter_xxx_0, '0', pfb_arb_resampler_xxx_0, '0']
