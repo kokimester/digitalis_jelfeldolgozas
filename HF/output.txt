@@ -1,0 +1,1323 @@
+[?1049h[22;0;0t[1;33r(B[m[4l[?7h[H[2JPI: 45847
+STATION:
+Program: Country
+[H[2JPI: 45847
+STATION:
+Program: Country
+[H[2JPI: 45847
+STATION:
+Program: Country
+[H[2JPI: 45847
+STATION:   ADiO 1
+Program: Country
+[H[2JPI: 45847
+STATION:   ADK× 1
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country[4;66H[H[2JPI: 45847
+STATION:
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country[4;66H[H[2JPI: 45847
+STATION: neADIO 1
+Program: Country[4;66H[H[2JPI: 45847
+STATION: nei IO 1
+Program: Country
+Mine[4;66H[H[2JPI: 45847
+STATION: p i IO 1
+Program: Country
+Minelli[4;66H[H[2JPI: 45847
+STATION:  Ri IO 1
+Program: Country
+Minelli[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli[4;66H[H[2JPI: 45847
+STATION:  RADMM 1
+Program: Country
+Minelli[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MM[4;66H[H[2JPI: 45847
+STATION:  ^FADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD    
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R      
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  R      
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD    
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO  
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:     K× 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  R  K× 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: p   IO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  ^FAD
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: neADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: nei IO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: (Ri IO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: (RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: (RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: (RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: (RADMM 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: (RADMM
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION: (R  MM
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  R  MM
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:     K× 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  R  K× 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RÅÀK× 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;32H [4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p   IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  ^FAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: neADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: nei IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: nei K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p   IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  ^FAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: neADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: nei IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p i IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p ADMM 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p ADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  ^FADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R     1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R     1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p   IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  ^FAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: neADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  K×
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  K×
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK×
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p   IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  ^FAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: neADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: nei IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: nei K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri MM 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri MM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri MM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p   IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  ^FAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: neADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: nei IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p i IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  ^FADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p   IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  ^FAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: neADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: nei IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  Ri IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  MM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  MM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADMM
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  K× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADK× 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION: p   IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD   1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RAD
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:   ADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:     IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  R  IO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[H[2JPI: 45847
+STATION:  RADIO 1
+Program: Country
+Minelli - MMM[4;66H[33;1H[?1049l[23;0;0t[?1l>
