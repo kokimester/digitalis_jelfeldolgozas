@@ -21,7 +21,7 @@ tee fromcostas.cf32 |\
 tee fromsync.cf32 |\
 ./demod |\
 tee todecoder.bin |\
-./rds_decoder
+./rds_decoder > output.txt
 echo "done"
 # less costas.txt
 # python3 plot.py fromcostas.cf32 grccostas.cf32

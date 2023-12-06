@@ -252,7 +252,7 @@ blocks:
     bus_structure: null
     coordinate: [855, 941]
     rotation: 180
-    state: disabled
+    state: enabled
 - name: blocks_keep_one_in_n_0
   id: blocks_keep_one_in_n
   parameters:
@@ -1327,7 +1327,7 @@ blocks:
     bus_structure: null
     coordinate: [358, 796]
     rotation: 180
-    state: disabled
+    state: enabled
 - name: rds_panel_0
   id: rds_panel
   parameters:
@@ -1342,7 +1342,7 @@ blocks:
     bus_structure: null
     coordinate: [-12, 807]
     rotation: 180
-    state: disabled
+    state: enabled
 - name: rds_parser_0
   id: rds_parser
   parameters:
@@ -1361,7 +1361,7 @@ blocks:
     bus_structure: null
     coordinate: [150, 788]
     rotation: 180
-    state: disabled
+    state: enabled
 - name: rtlsdr_source_0
   id: rtlsdr_source
   parameters:

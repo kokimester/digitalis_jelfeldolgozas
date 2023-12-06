@@ -40,6 +40,7 @@ from gnuradio.filter import pfb
 from gnuradio.qtgui import Range, RangeWidget
 import osmosdr
 import time
+import rds
 from gnuradio import qtgui
 
 class fmvevo(gr.top_block, Qt.QWidget):
@@ -104,6 +105,11 @@ class fmvevo(gr.top_block, Qt.QWidget):
         self.rtlsdr_source_0.set_bb_gain(20, 0)
         self.rtlsdr_source_0.set_antenna('', 0)
         self.rtlsdr_source_0.set_bandwidth(0, 0)
+        self.rds_parser_0 = rds.parser(False, False, 0)
+        self.rds_panel_0 = rds.rdsPanel(0)
+        self._rds_panel_0_win = self.rds_panel_0
+        self.top_grid_layout.addWidget(self._rds_panel_0_win)
+        self.rds_decoder_0 = rds.decoder(False, False)
         self.rational_resampler_xxx_0 = filter.rational_resampler_ccc(
                 interpolation=1,
                 decimation=5,
@@ -484,6 +490,8 @@ class fmvevo(gr.top_block, Qt.QWidget):
         self.fir_filter_xxx_0 = filter.fir_filter_fff(4, firdes.low_pass(1.0,240000,13e3,3e3,firdes.WIN_HAMMING))
         self.fir_filter_xxx_0.declare_sample_delay(0)
         self.blocks_multiply_const_vxx_0 = blocks.multiply_const_ff(0.1)
+        self.blocks_file_source_1_0 = blocks.file_source(gr.sizeof_char*1, '/home/kokimester/digitalis_jelfeldolgozas/HF/todecoder.bin', True, 0, 0)
+        self.blocks_file_source_1_0.set_begin_tag(pmt.PMT_NIL)
         self.blocks_file_source_1 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/kokimester/digitalis_jelfeldolgozas/HF/fromsync.cf32', True, 0, 0)
         self.blocks_file_source_1.set_begin_tag(pmt.PMT_NIL)
         self.blocks_file_source_0 = blocks.file_source(gr.sizeof_gr_complex*1, '/home/kokimester/digitalis_jelfeldolgozas/HF/fromcostas.cf32', True, 0, 0)
@@ -500,6 +508,8 @@ class fmvevo(gr.top_block, Qt.QWidget):
         ##################################################
         # Connections
         ##################################################
+        self.msg_connect((self.rds_decoder_0, 'out'), (self.rds_parser_0, 'in'))
+        self.msg_connect((self.rds_parser_0, 'out'), (self.rds_panel_0, 'in'))
         self.connect((self.analog_agc_xx_0, 0), (self.blocks_file_sink_0, 0))
         self.connect((self.analog_agc_xx_0, 0), (self.qtgui_const_sink_x_0_1, 0))
         self.connect((self.analog_quadrature_demod_cf_0, 0), (self.blocks_multiply_const_vxx_0, 0))
@@ -509,6 +519,7 @@ class fmvevo(gr.top_block, Qt.QWidget):
         self.connect((self.blocks_file_source_0, 0), (self.qtgui_time_sink_x_0, 0))
         self.connect((self.blocks_file_source_1, 0), (self.qtgui_const_sink_x_0_0, 0))
         self.connect((self.blocks_file_source_1, 0), (self.qtgui_time_sink_x_0_0_0, 0))
+        self.connect((self.blocks_file_source_1_0, 0), (self.rds_decoder_0, 0))
         self.connect((self.blocks_multiply_const_vxx_0, 0), (self.pfb_arb_resampler_xxx_1, 0))
         self.connect((self.fir_filter_xxx_0, 0), (self.audio_sink_0, 0))
         self.connect((self.fir_filter_xxx_1, 0), (self.qtgui_time_sink_x_0_0, 0))
