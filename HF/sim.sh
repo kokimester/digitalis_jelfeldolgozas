@@ -14,7 +14,7 @@ fs=19000
 #from gnuradio:
 #tocostas.cf32
 cat tocostas.cf32 |\
-./costas $fs 2> costas.txt |\
+./costas $fs |\
 tee fromcostas.cf32 |\
 ./decimator 8 |\
 ./symsync 2 |\

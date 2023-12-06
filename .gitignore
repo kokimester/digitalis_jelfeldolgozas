@@ -1,3 +1,10 @@
 dep/
+HF/*.bin
+HF/points.txt
+HF/throw1inN
 HF/costas
+HF/decimator
+HF/demod
+HF/symsync
+HF/rds_decoder
 HF/*.cf32
