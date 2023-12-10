@@ -9,10 +9,6 @@ gcc demod.c -o demod -lm
 
 fs=19000
 
-#works!!!
-#solid_tocostas.cf32
-#from gnuradio:
-#tocostas.cf32
 cat tocostas.cf32 |\
 ./costas $fs |\
 tee fromcostas.cf32 |\
